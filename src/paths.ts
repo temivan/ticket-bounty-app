@@ -1,4 +1,6 @@
-export const homePath = () => "/";
+import type { Route } from "next";
 
-export const ticketsPath = () => "/tickets";
-export const ticketPath = (id: string) => `/tickets/${id}`;
+export const homePath = () => "/" as Route;
+
+export const ticketsPath = () => "/tickets" as Route;
+export const ticketPath = (id: string) => `/tickets/${id}` as Route;
