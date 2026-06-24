@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import { ticketsPath } from '@/paths';
 
 const HomePage = () => {
@@ -8,6 +9,9 @@ const HomePage = () => {
       <Link href={ticketsPath()} className="underline">
         Go to Tickets
       </Link>
+      <div className="flex min-h-svh items-center justify-center">
+        <Button>Click me</Button>
+      </div>
     </div>
   );
 };
